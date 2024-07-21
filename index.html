@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Verse | Imagination to reality</title>
+    <link
+      rel="shortcut icon"
+      href="./logos/My first design.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="output.css"> -->
+  </head>
+  <body>
+    <header>
+      <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim"></div>
+      </div>
+
+      <nav>
+        <a href="#" class="logo">
+          <img src="./logos/My first design.png" alt="" />
+          <span>Visual Verse</span>
+          </a>
+
+        <ul class="navbar">
+          <!-- <li><a href="#" class="active">Home</a></li> -->
+
+                    <!-- HERE IS THE FAULT OF ACTIVE CLASS -->
+
+          <li><a href="#" class="">Home</a></li>
+          <li><a href="#">About</a></li>
+          <!-- <li><a href="#">Services</a></li> -->
+          <li><a href="#FAQ's">FAQ's</a></li>
+          <!-- <li><a href="#">Blog</a></li> -->
+        </ul>
+
+        <div class="main">
+          <a href="#" class="user">Sign In</a>
+          <!-- <a href="#">Sign Up</a> -->
+          <a class="bx bx-menu" id="menu-icon"
+            ><img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/nolan/64/menu.png"
+              alt="menu"
+          /></a>
+        </div>
+      </nav>
+
+
+      <!-- forms -->
+
+<!-- sign up form start -->
+
+      <section id="sign_up-form">
+        <div class="box-shadow flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8" style="height: 98%; width: 70%; border-radius: 4px; margin: auto;">
+            <div class="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
+                <h2 class="text-2xl font-bold leading-tight text-black">Create an account</h2>
+                <p class="mt-2 text-base text-gray-600">
+                    Have one?
+                    <button id="form-sign_in-btn" class="font-medium text-black transition-all duration-200 hover:underline">Sign In</button>
+                </p>
+                <form action="https://script.google.com/macros/s/AKfycbzzxHlLuFSGfKYU_zdbKlyzaOAHwFVAAifJG_lHap7eEut_0B1jcsrp2QO_UtShFo12/exec" method="POST" class="mt-8" id="signup">
+                    <input type="hidden" name="formType" value="signup">
+                    <div class="space-y-5">
+                        <div>
+                            <label for="username" class="text-base font-medium text-gray-900"></label>
+                            <div class="mt-2">
+                                <input class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                       type="text" placeholder="Full Name" name="username" id="username" oninput="checkUsername()" />
+                                <small id="usernameError" class="text-red-500"></small>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contact" class="text-base font-medium text-gray-900"></label>
+                            <div class="mt-2">
+                                <input class="flex h-10 w-full flex-grow rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                       type="text" placeholder="Contact No." name="contact" id="contact" oninput="checkContact()" />
+                                <small id="contactError" class="text-red-500"></small>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="text-base font-medium text-gray-900"></label>
+                            <div class="mt-2">
+                                <input class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                       type="email" placeholder="Email address" name="email" id="email" oninput="checkEmail()" />
+                                <small id="emailError" class="text-red-500"></small>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="password" class="text-base font-medium text-gray-900"></label>
+                            <div class="mt-2">
+                                <input class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                       type="password" placeholder="Password" name="password" id="password" oninput="checkPassword()" />
+                                <small id="passwordError" class="text-red-500"></small>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="password_confirmation" class="text-base font-medium text-gray-900"></label>
+                            <div class="mt-2">
+                                <input class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                       type="password" placeholder="Confirm Password" name="password_confirmation" id="password_confirmation" oninput="checkConfirmPassword()" />
+                                <small id="confirmPasswordError" class="text-red-500"></small>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-black px-3.5 py-2.5 text-base font-semibold leading-7 text-white hover:bg-black/80">
+                                Create Account
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- sign up form end -->
+
+
+
+<!-- sign in form start -->
+
+
+    <section id="sign_in-form">
+        <div id="inner_sign-in" class="box-shadow flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8" style="width: 50%; border-radius: 4px; margin: auto;">
+            <div class="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
+                <h2 class="text-2xl font-bold leading-tight text-black">Sign in</h2>
+                <p class="mt-2 text-sm text-gray-600">
+                    Don't have an account?
+                    <button id="form-creat_one-btn" class="font-semibold text-black transition-all duration-200 hover:underline">Create one</button>
+                </p>
+                <form action="https://script.google.com/macros/s/AKfycbzzxHlLuFSGfKYU_zdbKlyzaOAHwFVAAifJG_lHap7eEut_0B1jcsrp2QO_UtShFo12/exec" method="POST" class="mt-8" id="loginForm">
+                    <input type="hidden" name="formType" value="signin">
+                    <div class="space-y-5">
+                        <div>
+                            <label for="email" class="text-base font-medium text-gray-900"></label>
+                            <div class="mt-2">
+                                <input class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                       type="email" placeholder="Email address" name="email" id="email" />
+                                <small id="emailError" class="text-red-500"></small>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="password" class="text-base font-medium text-gray-900"></label>
+                            <div class="mt-2">
+                                <input class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                       type="password" placeholder="Password" name="password" id="password" />
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-black px-3.5 py-2.5 text-base font-semibold leading-7 text-white hover:bg-black/80">
+                                Sign In
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+<!-- sign in form end -->
+
+      <!-- forms -->
+
+
+      <section class="whole-hero-section">
+        <div class="hero-section">
+          <div class="hero-right-part">
+            <div class="hero-heading">
+              <p>Frame Your Imagination</p>
+              <p>With <span>Visual Verse</span></p>
+            </div>
+            <div class="hero-text">Just imagine and transform into a frame</div>
+            <a href="#" class="hero-btn">Get start</a>
+          </div>
+
+          <div class="hero-left-part">
+            <!-- partial:index.partial.html -->
+            <article class="gallery">
+              <img
+                src="https://w0.peakpx.com/wallpaper/496/328/HD-wallpaper-dr-strange-avengers.jpg"
+                alt="guitar player at concert"
+              />
+              <img
+                src="https://w0.peakpx.com/wallpaper/54/425/HD-wallpaper-avengers-endgame-avengers-endgame-ironman-captain-america-spiderman-black-panther-dr-strange-winter-soldier-hulk-black-widow-warmachine.jpg"
+                alt="duo singing"
+              />
+              <img
+                src="https://lh3.googleusercontent.com/proxy/TsG7yfRDBk3MwvSdaauj95t4QmV55j4n2GOT-y8H0UHD87tO_-QmLNdL1bakC_FJF0wk-n07uuMRJOl2GB-utIJHYjFy"
+                alt="crowd cheering"
+              />
+              <img
+                src="https://images.hdqwalls.com/wallpapers/loki-the-god-of-mischief-2023-n8.jpg"
+                alt="singer performing"
+              />
+              <img
+                src="https://i.pinimg.com/736x/61/3f/59/613f590958871114fb4c29262d3039ca.jpg"
+                alt="singer fistbumping crowd"
+              />
+              <img
+                src="https://preview.redd.it/jgrho7z3a8e41.jpg?auto=webp&s=87916ac3cc33c4bee9aee2c289008c2e5c397d55"
+                alt="crowd cheering"
+              />
+              <img
+                src="https://cdn.pixabay.com/photo/2022/06/20/11/34/spiderman-7273540_1280.jpg"
+                alt="guitar player singing"
+              />
+              <img
+                src="https://e1.pxfuel.com/desktop-wallpaper/245/730/desktop-wallpaper-avengers-endgame-doctor-strange-spider-spider-man-endgame.jpg"
+                alt="guitar player at concert"
+              />
+            </article>
+            <!-- partial -->
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- BIG AUTO SLIDER START -->
+
+
+   
+    <!-- BIG AUTO SLIDER END -->
+
+    <!-- EXPANDABLE SLIDER START-->
+
+    <div class="expandable-slider-cont">
+      <div class="container">
+        <div class="panel panel__1 active">
+          <!-- <h3>Example TEXT</h3> -->
+        </div>
+        <!-- /.panel -->
+        <div class="panel panel__2">
+          <!-- <h3>Example TEXT</h3> -->
+        </div>
+        <!-- /.panel -->
+        <div class="panel panel__3">
+          <!-- <h3>Example TEXT</h3> -->
+        </div>
+        <!-- /.panel -->
+        <div class="panel panel__4">
+          <!-- <h3>Example TEXT</h3> -->
+        </div>
+        <!-- /.panel -->
+        <div class="panel panel__5">
+          <!-- <h3>Example TEXT</h3> -->
+        </div>
+        <!-- /.panel -->
+      </div>
+    </div>
+
+    <!-- EXPANDABLE SLIDER END-->
+
+
+    <!-- prompt section start -->
+    
+    <section class="input-whole-cont">
+      <div class="input-cont">
+        <p>Think, Prompt, View</p>
+        <span>Imagimnation to reality</span>
+        <input type="text" name="" id="inp-prompt" placeholder="Write your thoughts...">
+<a href="#"><button class="gen-img-btn">Visualize</button></a>
+</div>
+    </section>
+
+    <!-- prompt section end -->
+
+    <!-- SMOOTH SCROLL START -->
+
+    <div class="smooth-scroll-cont">
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="./smth scrl img/RowImageSlider10.webp" />
+          <img src="./smth scrl img/RowImageSlider12.webp" />
+          <img src="./smth scrl img/RowImageSlider17 (1).webp" />
+          <img src="./smth scrl img/RowImageSlider20.webp" />
+          <img src="./smth scrl img/RowImageSlider21.webp" />
+          <img src="./smth scrl img/RowImageSlider22.webp" />
+          <img src="./smth scrl img/RowImageSlider24.webp" />
+          <img src="./smth scrl img/RowImageSlider28.webp" />
+          <img src="./smth scrl img/RowImageSlider29.webp" />
+          <img src="./smth scrl img/RowImageSlider38.webp" />
+        </div>
+      </div>
+
+      <div class="blogos">
+        <div class="blogos-slide">
+          <img src="./smth scrl img/RowImageSlider12.webp" />
+          <img src="./smth scrl img/RowImageSlider10.webp" />
+          <img src="./smth scrl img/RowImageSlider20.webp" />
+          <img src="./smth scrl img/RowImageSlider17 (1).webp" />
+          <img src="./smth scrl img/RowImageSlider21.webp" />
+          <img src="./smth scrl img/RowImageSlider28.webp" />
+          <img src="./smth scrl img/RowImageSlider24.webp" />
+          <img src="./smth scrl img/RowImageSlider22.webp" />
+          <img src="./smth scrl img/RowImageSlider38.webp" />
+          <img src="./smth scrl img/RowImageSlider29.webp" />
+        </div>
+      </div>
+      <div id="FAQ's" class="for-faq-redr"></div>
+    </div>
+
+    <!-- SMOOTH SCROLL END -->
+     
+
+    <!-- FAQ SECTION START -->
+
+     
+    <div class="faq-heading">
+      <p>F A Q's</p>
+  </div>
+  
+  
+     <div class="accordion-cont">
+      <div class="accordion">
+        <div data-aos="fade-left" class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title"
+              >What is ChatGPT and how can it benefit my business?</span
+            >
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <span class="accordion-title"
+              >Can i expect hands-on training and practical examples during the
+              workshop?</span
+            >
+            <span class="icon" aria-hidden="true">
+              <img class="image-icon2" loading="lazy" alt="" src="imgs/image.svg"
+            /></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <span class="accordion-title"
+              >How can ChatGPT help me save time and resources in my business
+              operations?</span
+            >
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-right" class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title"
+              >What kind of support and resources will be available to me after
+              the workshop ?</span
+            >
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+     </div>
+
+
+    <!-- FAQ SECTION END -->
+
+
+    <!-- MEDIUM SLIDER START-->
+
+
+    <div class="md-slider-heading">
+      <p>Imagine Nature's <span>Beauty</span></p>
+    </div>
+
+    <div class="medium-slider-cont">
+      <div class="mdContainer">
+        <div class="mdSlide">
+          <div
+            class="mdItem"
+            style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg)"
+          ></div>
+          <div
+            class="mdItem"
+            style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg)"
+          ></div>
+          <div
+            class="mdItem"
+            style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg)"
+          ></div>
+          <div
+            class="mdItem"
+            style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg)"
+          ></div>
+          <div
+            class="mdItem"
+            style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg)"
+          ></div>
+          <div
+            class="mdItem"
+            style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg)"
+          ></div>
+        </div>
+
+        <div class="mdButton">
+          <button class="mdPrev"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="mdNext">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MEDIUM SLIDER END-->
+
+    <!-- FOOTER START -->
+<footer>
+    <div class="footer-distributed">
+      <div class="footer-left">
+        <h3>
+          <img src="./logos/My first design.png" alt="Vv logo" /><span
+            >Visual Verse</span
+          >
+        </h3>
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">About</a>
+          |
+          <!-- <a href="#">Contact</a>
+              | -->
+          <a href="#">FAQ's</a>
+          <!-- |
+          <a href="#">Blog</a> -->
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p class="footer-company-name">
+          © 2024 <strong>Visual Verse</strong> All rights reserved
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <!-- <i class="fa fa-map-marker"></i> -->
+          <!-- <p><span>Ghaziabad</span> Delhi</p> -->
+          <img width="64" height="64" src="https://img.icons8.com/nolan/64/fine-print.png" alt="fine-print"/>
+           <a href="#">Terms & conditions</a>
+        </div>
+
+        <div>
+          <!-- <i class="fa fa-phone"></i> -->
+          <img width="64" height="64" src="https://img.icons8.com/nolan/64/privacy.png" alt="privacy"/>
+          <a href="#">Privacy policy</a>
+        </div>
+        <div>
+          <!-- <i class="fa fa-envelope"></i> -->
+          <img width="64" height="64" src="https://img.icons8.com/nolan/64/apple-mail.png" alt="apple-mail"/>
+          <p><a href="mailto:sagar00001.co@gmail.com">visualV@gmail.com</a></p>
+        </div>
+        <div>
+          <!-- <i class="fa fa-envelope"></i> -->
+          <img width="64" height="64" src="https://img.icons8.com/nolan/64/contact-card.png" alt="contact-card"/>
+          <p><a href="#">Contact Us</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+
+<div class="footer-spin">
+  <img src="./logos/My first design.png" alt="">
+  <!-- <h2>Visual Verse</h2> -->
+   <p>Imagination to reality</p>
+</div>
+
+          <!-- <span>About the company</span>
+          <strong>Sagar Developer</strong> is a Youtube channel where you can
+          find more creative CSS Animations and Effects along with HTML,
+          JavaScript and Projects using C/C++. -->
+        </p>
+        <!-- <div class="footer-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div> -->
+      </div>
+    </div>
+  </footer>
+
+    <!-- FOOTER END -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>

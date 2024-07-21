@@ -1,0 +1,156 @@
+ <footer>
+      <div class="whole-footer-cont">
+        <div class="footer-heading">
+          <div class="footer-logo">
+            <img src="./logos/My first design.png" alt="" />
+            <span>Visual Verse</span>
+          </div>
+        <div class="footer-mid">
+          <div class="footer-mid-1">
+            <div>
+              <span>Visual Verse</span>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ's</a></li>
+              </ul>
+            </div>
+            <div>
+              <span>Company</span>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <!-- <li><a href="#">Blog</a></li> -->
+                <!-- <li><a href="#">FAQ's</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="footer-mid-2">
+            <div>
+              <span>Legal</span>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & conditions</a></li>
+              </ul>
+            </div>
+            <div>
+              <img src="./logos/My first design.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+        <div class="footer-bottom">
+          <p>Imagination to reality</p>
+          <div class="footer-icons">
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <!-- <li><a href="#"><i class="fa-brands fa-x-twitter"></i></i></li> -->
+            </ul>
+          </div>
+          <div class="cpy-txt">
+            © 2024 Visual Verse AI. All rights reserved.
+         </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+  height: 40vh;
+}
+
+footer ul,a{
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+
+.footer-heading{
+  display: flex;
+  flex-direction: column;
+}
+
+.whole-footer-cont{
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+.footer-logo{
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.footer-logo img{
+  display: flex;
+  align-items: center;
+  width: 3rem;
+  margin-right: 0.2rem;
+}
+
+.footer-logo span{
+  /* font-size: 30px; */
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.footer-mid{
+  /* display: flex;
+  justify-content: space-evenly; */
+}
+
+.footer-mid-1{
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-mid-2{
+  display: flex;
+}
+
+.footer-mid-2 img{
+  width: 280px;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-icons ul{
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+
+
+
